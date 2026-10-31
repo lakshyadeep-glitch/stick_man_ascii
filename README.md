@@ -1,39 +1,38 @@
-# Bad Apple ASCII — Standalone C Edition 🍎
+# Stick Man Dance ASCII — Standalone C Edition
 
-A dependency-free C terminal animation with a monochrome ASCII aesthetic.
+A lightweight, dependency-free C terminal animation featuring an animated stick figure, rendered entirely using ASCII characters.
 
-**Important:** This is an original procedural dancing-silhouette animation inspired by the broad black-and-white terminal-art look. It is not the original Bad Apple video, and it does not reproduce its frames or soundtrack.
+## Features
 
-## No external files required
+- Animated dancing stick figure.
+- Monochrome ASCII graphics.
+- Real-time terminal rendering.
+- Procedurally generated animation.
+- Adjustable animation dimensions and speed.
+- No external assets or libraries required.
 
-This version needs:
-- GCC (or another C compiler)
-- A terminal with ANSI escape-sequence support
+## Requirements
 
-It does **not** need:
-- MP4 video
-- FFmpeg
-- Python
-- OpenCV
-- Internet access at runtime
+- GCC (or another C compiler).
+- VS Code or any terminal supporting ANSI escape sequences.
 
 ## Compile
 
-Open this folder in VS Code, then open **Terminal → New Terminal**:
+Open the project folder in VS Code and select **Terminal → New Terminal**.
 
 ```powershell
-gcc main.c -o badapple.exe
+gcc main.c -o stickman.exe
 ```
 
 ## Run
 
 ```powershell
-.\badapple.exe
+.\stickman.exe
 ```
 
-The animation plays directly in the terminal. Press `Ctrl+C` to stop early.
+The animation plays directly in your terminal. Press `Ctrl+C` to stop it.
 
-## Customize
+## Customization
 
 Edit these constants near the top of `main.c`:
 
@@ -44,16 +43,17 @@ Edit these constants near the top of `main.c`:
 #define DELAY_MS 70
 ```
 
-- `W` and `H`: terminal animation dimensions.
-- `FRAMES`: number of animation frames.
-- `DELAY_MS`: delay between frames in milliseconds.
+- `W`: Animation width.
+- `H`: Animation height.
+- `FRAMES`: Total number of animation frames.
+- `DELAY_MS`: Delay between frames in milliseconds.
 
-If your terminal is small, reduce `W` and `H` together.
+Reduce `W` and `H` if your terminal window is small.
 
-## Project files
+## Project Structure
 
 ```text
-bad-apple-ascii-standalone/
+stick-man-dance-ascii/
 ├── main.c
 ├── README.md
 └── .gitignore
@@ -61,4 +61,4 @@ bad-apple-ascii-standalone/
 
 ## License
 
-MIT for this original source code.
+MIT License. Feel free to use, modify, and distribute this project.
